@@ -1,0 +1,199 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="3UP76VBK6s5z7vF9iwy4">
+    <mxGraphModel dx="1705" dy="1520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-13" value="nume_categorie#&lt;div&gt;descriere&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="25" y="70" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-14" value="CATEGORIE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Z_SEva_LKh4x3BCqcosk-15" target="Z_SEva_LKh4x3BCqcosk-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Z_SEva_LKh4x3BCqcosk-15" target="Z_SEva_LKh4x3BCqcosk-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-15" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="10" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-16" value="isbn#&lt;div&gt;titlu&lt;/div&gt;&lt;div&gt;editura&lt;/div&gt;&lt;div&gt;numar_pagini&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="325" y="70" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-17" value="MODEL_CARTE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Z_SEva_LKh4x3BCqcosk-19" target="Z_SEva_LKh4x3BCqcosk-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-19" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="10" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-20" value="cod_cate#&lt;div&gt;isbn&lt;/div&gt;&lt;div&gt;cod_stare&lt;/div&gt;&lt;div&gt;locatie&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="635" y="70" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-21" value="CARTE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Z_SEva_LKh4x3BCqcosk-22" target="Z_SEva_LKh4x3BCqcosk-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="280" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-23" value="cod_stare#&lt;div&gt;nume&lt;/div&gt;&lt;div&gt;descriere&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="635" y="340" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-24" value="STARE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-27" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="10" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-28" value="cod_client#&lt;div&gt;nume&lt;/div&gt;&lt;div&gt;prenume&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;hash_parola&lt;/div&gt;&lt;div&gt;domiciliu&lt;/div&gt;&lt;div&gt;data_inscriere&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1215" y="70" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-29" value="CLIENT" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-31" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="290" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-32" value="cod_angajat#&lt;div&gt;nume&lt;/div&gt;&lt;div&gt;prenume&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;hash_parola&lt;/div&gt;&lt;div&gt;numar_telefon&lt;/div&gt;&lt;div&gt;salariu&lt;/div&gt;&lt;div&gt;data_angajare&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="25" y="350" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-33" value="ANGAJAT" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-34" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="290" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-35" value="cod_angajat#&lt;div&gt;data#&lt;/div&gt;&lt;div&gt;tip_actiune&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="325" y="350" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-36" value="ISTORIC_ANGAJATI" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.405;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Z_SEva_LKh4x3BCqcosk-34" target="Z_SEva_LKh4x3BCqcosk-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Z_SEva_LKh4x3BCqcosk-39" target="Z_SEva_LKh4x3BCqcosk-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Z_SEva_LKh4x3BCqcosk-39" target="Z_SEva_LKh4x3BCqcosk-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-39" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="10" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-40" value="cod_client#&lt;div&gt;cod_carte#&lt;/div&gt;&lt;div&gt;continut&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="925" y="70" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-41" value="RECENZIE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-49" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Z_SEva_LKh4x3BCqcosk-44" target="Z_SEva_LKh4x3BCqcosk-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-51" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Z_SEva_LKh4x3BCqcosk-44" target="Z_SEva_LKh4x3BCqcosk-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-44" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="280" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-45" value="cod_client#&lt;div&gt;cod_stare#&lt;/div&gt;&lt;div&gt;cod_client#&lt;/div&gt;&lt;div&gt;data_primire#&lt;/div&gt;&lt;div&gt;data_returnare&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="925" y="340" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-46" value="ISTORIC_IMPRUMUTAT" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-52" value="M(0)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="275" y="88" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-53" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="175" y="88" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-54" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="475" y="88" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-55" value="M(0)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="590" y="88" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-56" value="M(0)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="870" y="88" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-57" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="785" y="88" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-58" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1185" y="88" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-59" value="M(0&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="88" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-60" value="M(0)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="710" y="180" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-62" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="715" y="258" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-63" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="785" y="328" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-64" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="785" y="158" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-65" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1205" y="188" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-66" value="M(0&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="895" y="248" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-67" value="M(0&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="240" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-68" value="M(0&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="875" y="370" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-69" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="185" y="338" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-70" value="M(0)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="265" y="338" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-71" value="are" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="48" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-72" value="este" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="525" y="58" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-73" value="este in starea" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=270;" vertex="1" parent="1">
+          <mxGeometry x="645" y="218" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-74" value="face" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="58" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-75" value="are" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="830" y="58" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-76" value="primita in" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="815" y="338" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-77" value="este imprumutata" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=45;" vertex="1" parent="1">
+          <mxGeometry x="805" y="208" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-78" value="de catre" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-30;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="208" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z_SEva_LKh4x3BCqcosk-79" value="intra/iese" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195" y="348" width="70" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
