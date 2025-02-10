@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategorieController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,4 +18,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::get('categorie/{categorie}', [CategorieController::class, 'show']);
+
+Route::middleware(['auth', 'verified', 'isAngajat'])
+    ->group(function () {
+        Route::get('/categorie', [CategorieController::class, 'index']);
+        Route::get('/categorie/{categorie}/edit', [CategorieController::class, 'edit']);
+    });
+
+require __DIR__ . '/auth.php';
