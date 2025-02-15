@@ -19,11 +19,20 @@ return new class extends Migration
         Schema::create('model_carte', function (Blueprint $table) {
             $table->string('isbn')->primary();
             $table->string('titlu');
+            $table->string('autor');
             $table->string('editura');
-            $table->string('nume_categorie');
-            $table->string('cover');
-            $table->foreign('nume_categorie')->references('nume_categorie')->on('categorie');
+            $table->string('cover')->nullable();
+            $table->string('dark_cover')->nullable();
             $table->integer('numar_pagini', false, true);
+            $table->integer('stele', false, true);
+            $table->timestamps();
+        });
+        Schema::create('categorie_model_carte', function (Blueprint $table) {
+            $table->id();
+            $table->string('nume_categorie');
+            $table->foreign('nume_categorie')->references('nume_categorie')->on('categorie');
+            $table->string('isbn');
+            $table->foreign('isbn')->references('isbn')->on('model_carte');
             $table->timestamps();
         });
         Schema::create('stare', function (Blueprint $table) {
@@ -43,18 +52,18 @@ return new class extends Migration
         Schema::create('recenzie', function (Blueprint $table) {
             $table->foreignId('cod_client');
             $table->string('isbn');
-
+            $table->string('continut');
             $table->foreign('cod_client')->references('id')->on('users');
             $table->foreign('isbn')->references('isbn')->on('model_carte');
-            $table->integer('stele', false, true);
             $table->primary(['cod_client', 'isbn']);
             $table->timestamps();
         });
-        Schema::create('istoric_imprumut', function (Blueprint $table) {
+        /*
+        cod_stare_primitahema::create('istoric_imprumut', function (Blueprint $table) {
             $table->foreignId('cod_client');
             $table->foreignId('cod_stare_primita');
             $table->foreignId('cod_stare_adusa')->nullable();
-            $table->string('cod_carte');
+            $table->foreignId('cod_carte');
 
             $table->foreign('cod_carte')->references('cod_carte')->on('carte');
             $table->foreign('cod_client')->references('id')->on('users');
@@ -65,6 +74,26 @@ return new class extends Migration
             $table->dateTime('data_returnare')->nullable();
             $table->timestamps();
         });
+        */
+        Schema::create('lista', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+            $table->foreignId('user')->on('users');
+            $table->timestamp('aprobat')->nullable();
+            $table->foreignId('aprobat_de')->nullable();
+            $table->timestamp('return')->nullable();
+        });
+        Schema::create('lista_carte', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+            $table->foreignId('id_lista')->references('id')->on('lista');
+            $table->string('model_carte')->foreign()->references('isbn')->on('model_carte')->nullable();
+            $table->foreignId('carte')->references('cod_carte')->on('carte')->nullable();
+        });
+        Schema::table('users', function (Blueprint $table) {
+            $table->foreignId('favorite')->nullable()->references('id')->on('lista');
+            $table->foreignId('cart')->nullable()->references('id')->on('lista');
+        });
     }
 
     /**
@@ -74,7 +103,10 @@ return new class extends Migration
     {
         Schema::dropIfExists('model_carte');
         Schema::dropIfExists('stare');
+        Schema::dropIfExists('model_carte');
         Schema::dropIfExists('carte');
         Schema::dropIfExists('recenzie');
+        Schema::dropIfExists('lista');
+        Schema::dropIfExists('lista_carte');
     }
 };

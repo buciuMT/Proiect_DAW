@@ -7,9 +7,8 @@ use Thiagoprz\EloquentCompositeKey\HasCompositePrimaryKey;
 
 class recenzie extends Model
 {
-    use HasCompositePrimaryKey;
     protected $table = 'recenzie';
     protected $primaryKey = ['cod_client', 'isbn'];
-    protected $key_type = 'string';
-    protected $auto_increment = false;
+    protected $keyType = 'string';
+    //  protected $auto_increment = false;
 }

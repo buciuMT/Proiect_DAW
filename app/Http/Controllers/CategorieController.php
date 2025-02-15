@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\categorie;
+use App\Models\model_carte;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\ViewServiceProvider;
@@ -17,7 +18,16 @@ class CategorieController extends Controller
     {
         return view('categorie_index', ['categorie' => DB::table('categorie')->get()]);
     }
-
+    public function view($request)
+    {
+        $modelCarti = DB::table('model_carte')
+            ->join('categorie_model_carte', 'model_carte.isbn', '=', 'categorie_model_carte.isbn')
+            ->join('categorie', 'categorie_model_carte.nume_categorie', '=', 'categorie.nume_categorie')
+            ->where('categorie.nume_categorie', $request)
+            ->select('model_carte.*')
+            ->get();
+        return view('index', ['carti' => json_decode(json_encode($modelCarti->unwrap($modelCarti)), true)]);
+    }
     /**
      * Show the form for creating a new resource.
      */

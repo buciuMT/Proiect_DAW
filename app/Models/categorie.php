@@ -10,7 +10,7 @@ class categorie extends Model
         'descriere',
     ];
     protected $table = 'categorie';
-    protected $primary = 'nume_categorie';
-    protected $key_type = 'string';
+    protected $primaryKey = 'nume_categorie';
+    protected $keyType = 'string';
     protected $auto_increment = false;
 }

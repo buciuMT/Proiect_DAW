@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\carte;
+use App\Models\categorie;
+use App\Models\categorie_model_carte;
+use App\Models\model_carte;
+use App\Models\recenzie;
 use Illuminate\Http\Request;
 
 class CarteController extends Controller
@@ -10,10 +14,7 @@ class CarteController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        //
-    }
+    public function index() {}
 
     /**
      * Show the form for creating a new resource.
@@ -29,6 +30,14 @@ class CarteController extends Controller
     public function store(Request $request)
     {
         //
+    }
+
+    public function view(Request $request, string $isbn)
+    {
+        $model = model_carte::find($isbn);
+        $recenzi = recenzie::where('isbn', $isbn)->get();
+        $categorii = categorie_model_carte::where('isbn', $isbn)->get();
+        return view('carte', ['model' => $model, 'recenzii' => $recenzi, 'categorii' => $categorii]);
     }
 
     /**

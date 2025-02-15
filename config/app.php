@@ -123,4 +123,7 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'ADMIN_EMAIL' => env('ADMIN_MAIL', 'example@example.com'),
+    'VERFCLIENT' => env('verfclient'),
+    'VERFSERVER' => env('verfserver'),
 ];
