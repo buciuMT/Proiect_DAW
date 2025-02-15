@@ -2,41 +2,52 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ListaCarteModel;
 use App\Models\ListaModel;
 use App\Models\model_carte;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+function addToFavorites($userId, $isbn)
+{
+    // Find the user
+    $user = User::findOrFail($userId);
+
+    // Check if user has a favorite list, if not create it
+    if (!$user->favorite) {
+        $lista = ListaModel::forceCreate(['user' => $user->id]);
+        $user->update(['favorite' => $lista->id]);
+    } else {
+        $lista = $user->favoriteList;
+    }
+
+    // Check if the item is already in the favorite list
+    $exists = ListaCarteModel::where('model_carte', $isbn)->where('id_lista', $lista->id)
+        ->exists();
+
+    if (!$exists) {
+        // Add the book to the list
+        ListaCarteModel::forceCreate([
+            'id_lista' => $lista->id,
+            'model_carte' => $isbn
+        ]);
+    }
+
+
+    return response()->json(['success' => 'Book added to favorite'], 200);
+}
 
 class listaController extends Controller
 {
+
     public function store(Request $request)
     {
-        dump($request);
+        //        $request->validate(['isbn' => 'exists|unique:model_carte']);
+        return addToFavorites($request->user()->id, $request->isbn);
     }
-    public function addFavoriteByIsbn($user, $isbn)
+    public function view()
     {
-        $book = model_carte::where('isbn', $isbn)->first();
-
-        if (!$book) {
-            return response()->json(['error' => 'Book not found'], 404);
-        }
-
-        $lista = ListaModel::create([
-            'user' => $user->id,  // assuming you want to assign this list to the user
-            'aprobat' => null,  // Assuming you can set aprobat to null or use any value
-            'aprobat_de' => null,  // Same for aprobat_de
-            'return' => null  // Assuming you want to leave this as null for now
-        ]);
-
-        $lista->listaCarte()->create([
-            'model_carte' => $book->isbn,
-            'carte' => null,
-        ]);
-
-        // Step 4: Assign the 'lista' to the user's 'favorite' field
-        $user->favorite = $lista->id;
-        $user->save();
-
-        return response()->json(['success' => 'Book added to favorite'], 200);
+        return view('lista', ['user' => Auth::user(), 'books' => ListaModel::where('id', Auth::user()->favorite)->get()]);
     }
 }

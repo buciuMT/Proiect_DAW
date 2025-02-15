@@ -34,6 +34,7 @@ Route::controller(contactController::class)->group(function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/favorite', [listaController::class, 'store'])->name('favorite.add');
+    Route::get('/favorite', [listaController::class, 'view'])->name('favorite.view');
     Route::post('/cart', [listaController::class, 'store'])->name('cart.add');
 });
 

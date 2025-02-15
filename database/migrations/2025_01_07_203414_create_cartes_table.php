@@ -58,23 +58,7 @@ return new class extends Migration
             $table->primary(['cod_client', 'isbn']);
             $table->timestamps();
         });
-        /*
-        cod_stare_primitahema::create('istoric_imprumut', function (Blueprint $table) {
-            $table->foreignId('cod_client');
-            $table->foreignId('cod_stare_primita');
-            $table->foreignId('cod_stare_adusa')->nullable();
-            $table->foreignId('cod_carte');
 
-            $table->foreign('cod_carte')->references('cod_carte')->on('carte');
-            $table->foreign('cod_client')->references('id')->on('users');
-            $table->foreign('cod_stare_primita')->references('cod_stare')->on('stare');
-            $table->foreign('cod_stare_adusa')->references('cod_stare')->on('stare');
-            $table->dateTime('data_primire');
-            $table->primary(['cod_client', 'data_primire', 'cod_carte']);
-            $table->dateTime('data_returnare')->nullable();
-            $table->timestamps();
-        });
-        */
         Schema::create('lista', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
@@ -86,13 +70,14 @@ return new class extends Migration
         Schema::create('lista_carte', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('id_lista')->references('id')->on('lista');
-            $table->string('model_carte')->foreign()->references('isbn')->on('model_carte')->nullable();
-            $table->foreignId('carte')->references('cod_carte')->on('carte')->nullable();
+            $table->foreignId('id_lista')->constrained('lista');
+            $table->string('model_carte')->nullable();
+            $table->foreign('model_carte')->references('isbn')->on('model_carte');
+            $table->foreignId('carte')->nullable()->constrained('carte', 'cod_carte');
         });
         Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('favorite')->nullable()->references('id')->on('lista');
-            $table->foreignId('cart')->nullable()->references('id')->on('lista');
+            $table->foreignId('favorite')->nullable()->constrained()->references('id')->on('lista');
+            $table->foreignId('cart')->nullable()->constrained()->references('id')->on('lista');
         });
     }
 
